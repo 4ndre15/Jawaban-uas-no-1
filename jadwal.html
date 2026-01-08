@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .jadwal-container {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .jadwal-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .jadwal-table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .jadwal-table th,
+        .jadwal-table td {
+            border: 2px solid #000;
+            padding: 15px;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .jadwal-table th {
+            background: #e0e0e0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .waktu-col {
+            background: #d0d0d0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .senin-col {
+            background: #fecaca;
+        }
+
+        .selasa-col {
+            background: #bbf7d0;
+        }
+
+        .rabu-col {
+            background: #bfdbfe;
+        }
+
+        .kamis-col {
+            background: #fef08a;
+        }
+
+        .istirahat-row {
+            background: #e5e7eb;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="jadwal-container">
+
+    <h2>Jadwal Kuliah</h2>
+
+    <table class="jadwal-table">
+        <thead>
+            <tr>
+                <th>Waktu</th>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                <th>Kamis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="waktu-col">08:00 - 09:30</td>
+                <td class="senin-col">Matematika Diskrit</td>
+                <td class="selasa-col">Algoritma dan Pemrograman</td>
+                <td class="rabu-col" rowspan="2">Sistem Operasi</td>
+                <td class="kamis-col">Bahasa Inggris</td>
+            </tr>
+            <tr>
+                <td class="waktu-col">09:30 - 11:00</td>
+                <td class="senin-col">Jaringan Komputer</td>
+                <td class="selasa-col">Kalkulus</td>
+                <td class="kamis-col">Pemrograman Web</td>
+            </tr>
+            <tr>
+                <td class="waktu-col">11:00 - 12:30</td>
+                <td class="senin-col" colspan="2">Proyek Akhir</td>
+                <td class="rabu-col">Pemrograman Mobile</td>
+                <td class="kamis-col" rowspan="2">Kecerdasan Buatan</td>
+            </tr>
+            <tr>
+                <td class="waktu-col">13:00 - 14:30</td>
+                <td class="senin-col">Manajemen Basis Data</td>
+                <td class="selasa-col">Arsitektur Komputer</td>
+                <td class="rabu-col">Keamanan Siber</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="istirahat-row">Istirahat</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
